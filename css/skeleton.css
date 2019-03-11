@@ -169,22 +169,24 @@ p {
 
 .navbar .navbar-content {
   /* the two following lines vertically align text */ 
-  display: flex;
   align-items: center;
 }
 
 /* Navbar logo */
 .navbar .logo-group {
   float: left;
+  height: 70px;
 }
 
 .navbar .logo-text {
   font-family: 'Cabin', sans-serif;
   text-decoration: none;
-  color: #ffffff;
+  color: white;
   font-size: 4rem;
   font-weight: 700;
-  letter-spacing: 6px;
+  letter-spacing: 4px;
+  height: 70px;
+  margin: 0px 10px;
 }
 
 /* Navbar logo */
@@ -193,13 +195,23 @@ p {
 }
 
 /* Navbar links */
-.navbar .navbar-link {
+.navbar .navbar-links {
   float: right;
-  /* display: block; */
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px;
+  height: 70px;
+  line-height: 70px;
+  white-space: nowrap;
+}
+
+/* Navbar link elements */
+.navbar .navbar-link {
+  margin: 1.1em 1.25em;
   text-decoration: none;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0rem;
 }
 
 /* Links
@@ -219,7 +231,7 @@ input[type="reset"],
 input[type="button"] {
   display: inline-block;
   height: 38px;
-  padding: 0 30px;
+  padding: 0 20px;
   color: #555;
   text-align: center;
   font-size: 11px;
