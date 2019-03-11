@@ -1,46 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-  <!-- Basic Page Needs
+  <head>
+    <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>GLXY Analytics</title>
-  <meta name="description" content="Static Homepage">
-  <meta name="author" content="Austin Fennacy">
+    <meta charset="utf-8" />
+    <title>GLXY Analytics</title>
+    <meta name="description" content="Static Homepage" />
+    <meta name="author" content="Austin Fennacy" />
 
-  <!-- Mobile Specific Metas
+    <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- FONT
+    <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link
+      href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
+      rel="stylesheet"
+      type="text/css"
+    />
 
-  <!-- CSS
+    <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
 
-  <!-- Favicon
+    <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+  </head>
 
-</head>
-<body>
-
-  <!-- Primary Page Layout
+  <body>
+    <!-- Sticky Navbar
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+    <div class="navbar"> <!-- style makes navbar sticky -->
+      <div class="container navbar-content"> <!-- style keeps items in center container -->
+        <a class="logo-group" href="index.html">
+          <img class="logo-image" src="images/glxy-logo-sticker.png">
+        </a>
+        <a class="logo-text" href="index.html">
+            GLXY
+        </a>
+        <a class="navbar-link" href="#home">
+          About
+        </a>
+        <a class="button button-primary" href="missioncontrol.glxy.ai">
+          Beta Login
+        </a>
       </div>
     </div>
-  </div>
 
-<!-- End Document
+    <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
+    <div class="container">
+      <div class="row">
+        <div class="one-half column" style="margin-top: 25%">
+          <h4>Basic Page</h4>
+          <a class="button button-primary" href="missioncontrol.glxy.ai"
+            >Beta Login</a
+          >
+
+          <h4>Basic Page</h4>
+          <h4>Basic Page</h4>
+          <h4>Basic Page</h4>
+          <h4>Basic Page</h4>
+          <h4>Basic Page</h4>
+          <h4>Basic Page</h4>
+          <h4>Basic Page</h4>
+          <h4>Basic Page</h4>
+          <h4>Basic Page</h4>
+          <h4>Basic Page</h4>
+          <h4>Basic Page</h4>
+          <h4>Basic Page</h4>
+          <h4>Basic Page</h4>
+          <h4>Basic Page</h4>
+          <h4>Basic Page</h4>
+          <h4>Basic Page</h4>
+          <h4>Basic Page</h4>
+          <h4>Basic Page</h4>
+          <h4>Basic Page</h4>
+          <h4>Basic Page</h4>
+          <h4>Basic Page</h4>
+          <h4>Basic Page</h4>
+          <h4>Basic Page</h4>
+          <h4>Basic Page</h4>
+          <h4>Basic Page</h4>
+
+          <p>
+            This index.html page is a placeholder with the CSS, font and
+            favicon. It's just waiting for you to add some content! If you need
+            some help hit up the
+            <a href="http://www.getskeleton.com">Skeleton documentation</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Code
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script>
+      // Code to make header "sticky"
+      // ––––––––––––––––––––––––––––––––––––––––––––––––––
+      window.onscroll = function() {
+        keepHeaderSticky();
+      };
+
+      var header = document.getElementById("stickyHeader");
+      var sticky = header.offsetTop;
+
+      function keepHeaderSticky() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  </body>
 </html>
