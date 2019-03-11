@@ -179,9 +179,12 @@ p {
 }
 
 .navbar .logo-text {
+  font-family: 'Cabin', sans-serif;
   text-decoration: none;
   color: #ffffff;
-  /* letter-spacing: 6px; */
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 6px;
 }
 
 /* Navbar logo */
