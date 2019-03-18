@@ -26,6 +26,14 @@
 */
 
 
+/* Resets
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway";
+}
+
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
@@ -134,6 +142,92 @@ body {
 }
 
 
+/* Brian's CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hero {
+  /* Sizing */
+  width: 100vw;
+  height: 100vh;
+  /* Text Styling */
+  color: white;
+  /* Background styles */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../images/clamp.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero-inner {
+  padding: 180px 90px;
+}
+
+.hero .btn {
+   /* Positioning and sizing */
+   display: block;
+   width: 200px;
+   
+   /* Padding and margins */
+   padding: 1em;
+   margin-top: 50px;
+   
+   
+   /* Text styles */
+   color: white; /* CHANGE THIS LINE */
+   text-decoration: none;
+   font-size: 1.5em;
+   
+   /* Border styles */
+   border: 3px solid white; /* CHANGE THIS LINE */
+   border-radius: 12px;
+}
+
+.first, .third {
+  background-color: white;
+  color: #05386B;
+  padding: 180px 90px;
+}
+
+.first, .second-contents h1, .third {
+  text-align: center;
+
+}
+
+.third {
+  background-color: white;
+}
+
+.second-img-1 {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.second-contents h1 {
+  padding: 90px 0 0 0;
+}
+
+.second-bg {
+  background-color: #05386B;
+}
+
+.second-contents {
+  color: white;
+}
+
+.second-text {
+  height: 600px;
+}
+
+.third-btn {
+  background-color: #05386B;
+  color: white;
+  text-align: center;
+  width: 250px;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
@@ -169,7 +263,7 @@ p {
   position: fixed;
   width: 100%;
   z-index: 99;
-  box-shadow: 0px 1px 10px grey;
+  box-shadow: 0px 1px 10px black;
 }
 
 .navbar .navbar-content {
