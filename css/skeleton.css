@@ -272,23 +272,9 @@ p {
 }
 
 /* Navbar logo */
-.navbar .logo-group {
+.navbar .logo {
   float: left;
   height: 60px;
-}
-
-.navbar .logo-text {
-  font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
-  font-style: normal;
-  font-variant: normal;
-  line-height: 60px;
-  text-decoration: none;
-  color: white;
-  font-size: 4rem;
-  font-weight: 700;
-  letter-spacing: 4px;
-  height: 70px;
-  margin: 0px 10px;
 }
 
 /* Navbar logo */
