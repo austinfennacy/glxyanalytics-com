@@ -232,9 +232,11 @@ body {
 
 .final-cta-background {
   background-color: #182837;
-  box-shadow: 
+  /* box-shadow: 
     inset 0px 10px 25px -10px #000,
-    inset 0px -5px 25px -10px #000; 
+    inset 0px -5px 25px -10px #000;  */
+  background-image: url("../images/fancy-pants-opacity-20.png");
+  background-image: repeat;
   height: 35rem;
 }
 
