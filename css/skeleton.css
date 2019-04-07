@@ -230,6 +230,36 @@ body {
   text-align: center;
 }
 
+.final-cta-background {
+  background-color: #182837;
+  box-shadow: 
+    inset 0px 10px 25px -10px #000,
+    inset 0px -5px 25px -10px #000; 
+  height: 35rem;
+}
+
+.final-cta-contents {
+  display: flex;
+  flex-direction: column;
+  margin: 10 rem;
+}
+
+.final-cta-text {
+  margin: 2rem auto;
+  font-weight: 900;
+  color: #EEEEEE;
+}
+
+.button-f-cta {
+  white-space: pre;
+  max-width: 18rem;
+  text-transform: uppercase;
+  margin: 2rem auto;
+  font-size: 1.6rem;
+  box-shadow: 0px 5px 10px #222222;
+}
+
+
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
