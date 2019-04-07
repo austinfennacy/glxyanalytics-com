@@ -175,8 +175,21 @@ body {
   text-transform: uppercase;
   margin: 0 auto;
   font-size: 1.4rem;
+  box-shadow: 0px 5px 10px #BBBBBB;
 }
 
+.below-fold {
+  background-color: #F9F9F9;
+}
+
+.fold-image{
+  width: 100%;
+  height: auto; 
+}
+
+.fold-supporting-text{
+  max-width: 66%;
+}
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
