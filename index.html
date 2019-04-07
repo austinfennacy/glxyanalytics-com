@@ -2,53 +2,32 @@
 <html lang="en">
 
 <head>
-  <!-- Basic Page Needs
+  <!-- import jQuery via google's Hosted Libraries CDN
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8" />
-  <title>GLXY Analytics</title>
-  <meta name="description"
-    content="With GLXY, coaches turn data into decisions faster. GLXY's platform shows an athlete's speed, strength, and safety scores every time they work out." />
-  <meta name="author" content="Austin Fennacy" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- loads reusable HTML components from ./reusable-components/ -->
+  <script>
+    $(function(){
+      $('#head-contents').load('reusable-components/head-contents.html');
+      $('#navbar').load('reusable-components/navbar.html');
+      $('#footer').load('reusable-components/footer.html');
+    });
+  </script>
 
-  <!-- Mobile Specific Metas
+  <!-- remaining head contents - loaded using jQuery
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css" />
-  <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/skeleton.css" />
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <div id="head-contents">
+    <!-- loaded by jQuery in head -->
+  </div>
 </head>
 
 <body>
-  <!-- Sticky Navbar
+  <!-- Sticky Navbar - loaded using jQuery
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="navbar">
-    <!-- style makes navbar sticky -->
-    <div class="container navbar-content">
-      <!-- style keeps items in center container -->
-      <a href="index.html">
-        <img class="logo-image" src="images/GLXY-navbar-logo.png">
-      </a>
-      <div class="navbar-links">
-        <a class="navbar-link" href="#home">
-          About
-        </a>
-        <a class="button button-primary navbar-link" href="app.glxyanalytics.com">
-          Beta Login
-        </a>
-      </div>
-    </div>
+  <div id="navbar">
+    <!-- loaded by jQuery in head -->
   </div>
+  
 
   <!-- Primary Page Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -111,51 +90,10 @@
     </div>
   </div>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-cols row">
+  <div id="footer">
+    <!-- loaded by jQuery in head -->
+  </div>
 
-        <div class="three columns footer-col">
-          <img class="logo-image" src="images/GLXY-footer-logo.png">
-        </div>
-
-        <div class="three columns footer-col">
-          <div class="footer-menu">
-            <h6 class="footer-menu-depth-1">
-              Product
-            </h6>
-            <h6 class="footer-menu-depth-2">
-              <a class="a-no-style" href="app.glxyanalytics.com">Login</a>
-            </h6>
-            <h6 class="footer-menu-depth-2">
-              <a class="a-no-style" href="contact.html">Apply</a>
-            </h6>
-          </div>
-        </div>
-
-        <div class="three columns footer-col">
-          <div class="footer-menu">
-            <h6 class="footer-menu-depth-1">
-              Company
-            </h6>
-            <h6 class="footer-menu-depth-2">
-              <a class="a-no-style" href="about.html">About</a>
-            </h6>
-            <h6 class="footer-menu-depth-2">
-              <a class="a-no-style" href="contact.html">Contact</a>
-            </h6>
-          </div>
-        </div>
-
-        <div class="three columns footer-col">
-          <a href="https://aws.amazon.com/what-is-cloud-computing">
-            <img class="aws-styling" src="https://d0.awsstatic.com/logos/powered-by-aws-white.png" alt="Powered by AWS Cloud Computing">
-          </a>
-        </div>
-
-      </div>
-    </div>
-  </footer>
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
