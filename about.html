@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- import jQuery via google's Hosted Libraries CDN
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- loads reusable HTML components from ./reusable-components/ -->
+  <script>
+    $(function(){
+      $('#head-contents').load('reusable-components/head-contents.html');
+      $('#navbar').load('reusable-components/navbar.html');
+      $('#footer').load('reusable-components/footer.html');
+    });
+  </script>
+
+  <!-- remaining head contents - loaded using jQuery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="head-contents">
+    <!-- loaded by jQuery in head -->
+  </div>
+</head>
+
+<body>
+    <!-- Sticky Navbar - loaded using jQuery
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div id="navbar">
+      <!-- loaded by jQuery in head -->
+    </div>
+
+
+
+
+
+
+    <div id="footer" class="footer">
+        <!-- loaded by jQuery in head -->
+      </div>
+
+</body>
