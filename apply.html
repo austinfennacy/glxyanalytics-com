@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- import jQuery via google's Hosted Libraries CDN
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- loads reusable HTML components from ./reusable-components/ -->
+  <script>
+    $(function(){
+      $('#head-contents').load('reusable-components/head-contents.html');
+      $('#navbar').load('reusable-components/navbar.html');
+      $('#footer').load('reusable-components/footer.html');
+    });
+  </script>
+
+  <!-- remaining head contents - loaded using jQuery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="head-contents">
+    <!-- loaded by jQuery in head -->
+  </div>
+</head>
+
+<body>
+    <!-- Sticky Navbar - loaded using jQuery
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div id="navbar">
+      <!-- loaded by jQuery in head -->
+    </div>
+
+    <div class="apply-header">
+        <h1> </h1>
+    </div>
+
+    <!-- google form embedd copy+paste is below -->
+    <div class="centered">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScTDd2hG-bg76f5oQWVlcxqk_AeQeiqwzvPB1cBbik2G9jxYw/viewform?embedded=true" width="640" height="908" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    </div>
+
+    <div id="footer" class="footer">
+        <!-- loaded by jQuery in head -->
+    </div>
+
+</body>

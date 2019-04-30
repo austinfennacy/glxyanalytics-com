@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- import jQuery via google's Hosted Libraries CDN
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- loads reusable HTML components from ./reusable-components/ -->
+  <script>
+    $(function(){
+      $('#head-contents').load('reusable-components/head-contents.html');
+      $('#navbar').load('reusable-components/navbar.html');
+      $('#footer').load('reusable-components/footer.html');
+    });
+  </script>
+
+  <!-- remaining head contents - loaded using jQuery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="head-contents">
+    <!-- loaded by jQuery in head -->
+  </div>
+</head>
+
+<body>
+    <!-- Sticky Navbar - loaded using jQuery
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div id="navbar">
+      <!-- loaded by jQuery in head -->
+    </div>
+
+    <div class="about-header">
+        <h1>About</h1>
+    </div>
+
+    <div class="container row about-div">
+        <div class="four columns">
+            <h4 class="about-label mission">Mission</h4>
+        </div>
+        <div class="eight columns">
+            <h5>
+                We're a group of engineers that believe in quantifying all aspects of weightlifting. Our mission is to promote data-driven, safe, and effictive weightlifting techniques that unlock an athletic program's full potential.
+            </h5>
+        </div>
+
+    </div>
+
+    <div class="container about-div">
+        <div>
+            <h4 class="about-label team">
+                Team
+            </h4>
+        </div>
+        <div class="row">
+            <div class="four columns flex-center-vertically">
+                <img class="team-image" src="images/team-photos/Austin-Fennacy.png" alt="GLXY's Platform">
+                <h5 class="centered team-name">Austin Fennacy</h5>
+                <h6 class="centered">Founder & CEO</h6>
+            </div>
+            <div class="four columns flex-center-vertically">
+                <img class="team-image" src="images/team-photos/Karanvir-Sandhu.jpg" alt="GLXY's Platform">
+                <h5 class="centered team-name">Karanvir Sandhu</h5>
+                <h6 class="centered">Full Stack iOS</h6>
+            </div>
+            <div class="four columns flex-center-vertically">
+                <img class="team-image" src="images/team-photos/Martina-Lofqvist.jpg" alt="GLXY's Platform">
+                <h5 class="centered team-name">Martina Lofqvist</h5>
+                <h6 class="centered">Full Stack Web</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="four columns flex-center-vertically">
+                <h5 class="centered team-name">  </h5>
+                <h6 class="centered">  </h6>
+            </div>
+            <div class="four columns flex-center-vertically">
+                <img class="team-image" src="images/team-photos/Alex-Behrmann.png" alt="GLXY's Platform">
+                <h5 class="centered team-name">Alexander Behrmann</h5>
+                <h6 class="centered">Full Stack Web</h6>
+            </div>
+            <div class="four columns flex-center-vertically">
+                <!-- placeholder -->
+            </div>
+        </div>
+        
+
+    </div>
+    
+    <div id="footer" class="footer">
+        <!-- loaded by jQuery in head -->
+      </div>
+
+</body>
